@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ピアソンの四角法</title>
+	<link rel="stylesheet" type="text/css" href="ぴあそん.css">
+</head>
+<body>
+
+<form onsubmit="return false" id="ABの分量" oninput="Aの分量結果.value = (A.value - C.value) / ((C.value - B.value) + (A.value - C.value)) * F.value , Bの分量結果.value = (C.value - B.value) / ((C.value - B.value) + (A.value - C.value)) * F.value">
+
+<p> (A) 混ぜる高濃度 <input type="number" name="A" value="">(％)</p>
+<p> (B) 混ぜる低濃度 <input type="number" name="B" value="">(％)</p>
+<p> (C) 作りたい濃度 <input type="number" name="C" value="">(％)</p>
+<p>	(F) 作りたい総量 <input type="number" name="F" value="">(g)</p>
+
+</form>
+
+<p>	Aの分量 <output name="Aの分量結果" form="ABの分量">0</output> (g)</p>
+<p>	Bの分量 <output name="Bの分量結果" form="ABの分量">0</output> (g)</p>
+
+<img src="https://atelier-s-liaison.com/wdps/wp-content/uploads/2019/06/36230e0a35960362c76f412b263fe43e.jpg" height="320" width="402">
+
+</body>
+</html>
